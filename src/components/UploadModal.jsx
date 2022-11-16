@@ -50,7 +50,7 @@ export default function UploadModal({ setShowUpload, setPhotoList }) {
         <Form.Item label="User Name" name="username">
           <Input required />
         </Form.Item>
-        <Form.Item label="Profile Picture URL" name="profilepPic">
+        <Form.Item label="Profile Picture URL" name="profilePic">
           <Input required />
         </Form.Item>
         <Form.Item label="Photo" name="photo">
