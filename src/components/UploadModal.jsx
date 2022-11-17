@@ -54,7 +54,11 @@ export default function UploadModal({ setShowUpload, setPhotoList }) {
           <Input required />
         </Form.Item>
         <Form.Item label="Photo" name="photo">
-          <Upload listType="picture-card">+</Upload>
+          <Upload listType="picture-card">
+            + 
+            <br />
+            Upload
+          </Upload>
         </Form.Item>
         <Form.Item label="Description" name="description">
           <Input.TextArea rows={4} required />
