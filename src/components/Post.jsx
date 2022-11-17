@@ -3,6 +3,7 @@ import { Avatar, Card } from "antd";
 export default function Post({ post }) {
   return (
     <Card
+      hoverable
       style={{ width: 300}}
       cover={
         <img alt={post.description} src={post.photo} />
