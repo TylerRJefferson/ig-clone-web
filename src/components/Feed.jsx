@@ -12,12 +12,16 @@ export default function Feed() {
       .then(data => setPhotoList(data))
       .catch(alert)
   }, [setPhotoList])
+
+
+  // console.log({photoList})
+
   return (
     <section className="photo-feed">
       {!photoList
         ? <p>Loading...</p>
         : photoList.map(post => (
-          <Post post={post} key={post.photoId}/>
+          <Post post={post} setPhotoList={setPhotoList} key={post.photoId}/>
         ))
       }
       {showUpload ? <UploadModal setPhotoList={setPhotoList} setShowUpload={setShowUpload} /> : null}
