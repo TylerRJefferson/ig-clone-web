@@ -13,7 +13,6 @@ export default function Feed() {
       .catch(alert)
   }, [setPhotoList])
 
-
   // console.log({photoList})
 
   return (
